@@ -13,11 +13,11 @@ https://forum.cfx.re/t/info-invisible-or-glitched-peds-list/40748
 
 How to disable auto load just remote code under from client.lua
 
-"
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
+	
+
+	RegisterNetEvent('esx:playerLoaded')
+	AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.TriggerServerCallback('esx_pedcommand:getData', function(data)
-    
         Citizen.Wait(5700)
         local modelHash = tostring(data.ped)
         print(modelHash)
@@ -30,6 +30,7 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
                     end)
                 end)
     end, GetPlayerServerId(PlayerId()))
-end)"
+    end)
+
 
 
