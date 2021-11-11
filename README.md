@@ -11,7 +11,7 @@ Glitched peds:
 https://forum.cfx.re/t/info-invisible-or-glitched-peds-list/40748
 
 
-How to disable auto load just remote code under from client.lua
+if you want to disable just remove code under 
 
 	
 
