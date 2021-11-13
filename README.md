@@ -11,7 +11,7 @@ broken peds:
 https://forum.cfx.re/t/info-invisible-or-glitched-peds-list/40748
 
 
-if you want to disable just remove code under 
+if you want to disable auto load just remove code under 
 
 	
 
