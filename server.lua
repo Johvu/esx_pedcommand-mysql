@@ -2,11 +2,11 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-TriggerEvent('es:addCommand', 'chanceped', function(source, args, user)
+
+RegisterCommand("chanceped", function(source, args, user)
 
 	TriggerClientEvent('npcvaihto', source, args, user, {})
-
-end, {help = "/chanceped ped"})
+    end)
 
 ESX.RegisterServerCallback('esx_pedcommand:getData', function(source, cb)
 	local xPlayer = ESX.GetPlayerFromId(source)
